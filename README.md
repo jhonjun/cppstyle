@@ -23,4 +23,4 @@ Follow these steps to avoid diff issues:
 2. Run cleanup.sh on that fresh checkout.
 3. Commit.
 
-Don't include any other change to the code before committing to ensure that only the code formatting is updated. If you have checked-out code that you have been working on prior to the cleanup, simply run cleansrc.sh cpp_file.cpp before you check it in to avoid diff problems.
+Don't include any other change to the code before committing to ensure that only the code formatting is updated. If you have checked-out code that you have been working on prior to the cleanup, simply run cleansrc.sh file.cpp before you check it in to avoid diff problems.
