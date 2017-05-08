@@ -21,6 +21,7 @@ Look no further! Simply run cleanup.sh on the root of your project and it will c
 Follow these steps to avoid diff issues:
 1. Do a clean checkout.
 2. Run cleanup.sh on that fresh checkout.
-3. Commit.
+3. Build.
+4. Commit.
 
 Don't include any other change to the code before committing to ensure that only the code formatting is updated. If you have checked-out code that you have been working on prior to the cleanup, simply run cleansrc.sh file.cpp before you check it in to avoid diff problems.
