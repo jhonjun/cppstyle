@@ -14,6 +14,7 @@ cleanup.sh [dir] [-e list of files or dirs to exclude]
 ## Rationale
 Is messy code giving you a headache?
 Tired of reformatting code manually?
+Do you want the style of your code to be consistent?
 
 Look no further! Simply run cleanup.sh on the root of your project and it will clean it up for you.
 
