@@ -25,29 +25,29 @@ clang-format -i -style="{ \
   AllowShortBlocksOnASingleLine: false, \
   AllowShortCaseLabelsOnASingleLine: false, \
   AllowShortFunctionsOnASingleLine: Inline, \
-  AllowShortIfStatementsOnASingleLine: false, \
-  AllowShortLoopsOnASingleLine: false, \
+  AllowShortIfStatementsOnASingleLine: true, \
+  AllowShortLoopsOnASingleLine: true, \
   AlwaysBreakAfterDefinitionReturnType: None, \
   AlwaysBreakAfterReturnType: None, \
   AlwaysBreakBeforeMultilineStrings: true, \
   AlwaysBreakTemplateDeclarations: true, \
   BinPackArguments: true, \
   BinPackParameters: false, \
+  BreakBeforeBraces: Custom,
   BraceWrapping: { \
     AfterClass: false, \
     AfterControlStatement: false, \
     AfterEnum: false, \
-    AfterFunction: false, \
+    AfterFunction: true, \
     AfterNamespace: false, \
     AfterObjCDeclaration: false, \
     AfterStruct: false, \
     AfterUnion: false, \
-    BeforeCatch: false, \
-    BeforeElse: false, \
+    BeforeCatch: true, \
+    BeforeElse: true, \
     IndentBraces: false \
   }, \
   BreakBeforeBinaryOperators: None, \
-  BreakBeforeBraces: WebKit, \
   BreakBeforeTernaryOperators: true, \
   BreakConstructorInitializersBeforeComma: false, \
   ColumnLimit: 100, \
@@ -80,7 +80,7 @@ clang-format -i -style="{ \
   SpaceAfterCStyleCast: false, \
   SpaceBeforeAssignmentOperators: true, \
   SpaceBeforeParens: ControlStatements, \
-  SpaceInEmptyParentheses: true, \
+  SpaceInEmptyParentheses: false, \
   SpacesBeforeTrailingComments: 2, \
   SpacesInAngles: false, \
   SpacesInContainerLiterals: true, \
