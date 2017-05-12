@@ -35,5 +35,5 @@ Follow these steps to avoid diff issues:
 
 You only have to do this once or every once in a while when you feel that your code is no longer consistent. Don't include any other changes to the code before committing to ensure that only the code formatting is updated. If you have checked-out code that you have been working on prior to the cleanup, simply run cleansrc.sh file.cpp before you check it in to avoid diff problems.
 
-**Note**: For source code that uses templates, compiling that code based on this standard requires at least a C++11 compiler.
+**Note**: For source code that has templates, compiling that code based on this standard requires at least a C++11 compiler.
 
