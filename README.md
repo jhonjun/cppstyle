@@ -9,7 +9,7 @@ cleanup.sh [dir] [-e list of files or dirs to exclude]
 
 ## Requirement
 * clang-format (tested with 3.8)
-* Both cleanup.sh and cleansrc.sh must be installed to a path within $PATH.
+* Both cleanup.sh and cleansrc.sh must be installed in a directory within $PATH.
 
 ## Rationale
 Is messy code giving you a headache?
