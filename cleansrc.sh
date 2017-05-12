@@ -1,11 +1,9 @@
-#!/bin/bash
-
 # cleansrc.sh 
-# Reformat C++ code according to a coding style
+# Reformat C++ code according to a coding standard.
 #
 # @author    Jhonjun Dormitorio [JJD]
 # @date      2017.05.05
-# @updated   2017.05.12
+# @updated   2017.05.13
 # @requires  clang-format
 #
 # @usage     cleansrc.sh cfile

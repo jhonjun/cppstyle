@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# cppstyle
+# Automatically fix C++ code to comply to a standard style.
+#
+# @author    Jhonjun Dormitorio [JJD]
+# @date      2017.05.13
+# @updated   2017.05.13
+# @requires  cleanup.sh, cleansrc.sh, clang-format
+#
+# @usage     cppstyle [dir] [-e list of files or dirs to exclude]
+#
+
+cleanup.sh ${*}
+

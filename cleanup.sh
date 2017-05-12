@@ -1,11 +1,9 @@
-#!/bin/bash
-
 # cleanup.sh
-# Recursively clean-up code according to a coding style
+# Recursively look for C++ code to cleanup.
 #
 # @author    Jhonjun Dormitorio [JJD]
 # @date      2017.05.05
-# @updated   2017.05.08
+# @updated   2017.05.13
 # @requires  cleansrc.sh
 #
 # @usage     cleanup.sh [dir] [-e list of files or dirs to exclude]
@@ -38,7 +36,6 @@ do
   then
     if [ -f "${srcfile}" ]
     then
-      #echo "Cleaning-up: ${srcfile}"
       ext="${srcfile##*.}"
       echo ${ext} | grep -e "^c$\|^cc$\|^cpp$\|^cxx$\|^h$\|^hh$\|^hpp$\|^hxx$" > /dev/null
       [[ ${?} == 0 ]] && cleansrc.sh "${srcfile}"
