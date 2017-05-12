@@ -5,7 +5,7 @@
 #
 # @author    Jhonjun Dormitorio [JJD]
 # @date      2017.05.05
-# @updated   2017.05.08
+# @updated   2017.05.12
 # @requires  clang-format
 #
 # @usage     cleansrc.sh cfile
@@ -18,31 +18,31 @@ clang-format -i -style="{ \
   AlignAfterOpenBracket: Align, \
   AlignConsecutiveAssignments: false, \
   AlignConsecutiveDeclarations: false, \
-  AlignEscapedNewlinesLeft: true, \
+  AlignEscapedNewlinesLeft: false, \
   AlignOperands: true, \
   AlignTrailingComments: true, \
-  AllowAllParametersOfDeclarationOnNextLine: false, \
+  AllowAllParametersOfDeclarationOnNextLine: true, \
   AllowShortBlocksOnASingleLine: false, \
   AllowShortCaseLabelsOnASingleLine: false, \
   AllowShortFunctionsOnASingleLine: Inline, \
-  AllowShortIfStatementsOnASingleLine: true, \
-  AllowShortLoopsOnASingleLine: true, \
+  AllowShortIfStatementsOnASingleLine: false, \
+  AllowShortLoopsOnASingleLine: false, \
   AlwaysBreakAfterDefinitionReturnType: None, \
   AlwaysBreakAfterReturnType: None, \
-  AlwaysBreakBeforeMultilineStrings: true, \
+  AlwaysBreakBeforeMultilineStrings: false, \
   AlwaysBreakTemplateDeclarations: true, \
   BinPackArguments: true, \
-  BinPackParameters: false, \
-  BreakBeforeBraces: Custom,
+  BinPackParameters: true, \
+  BreakBeforeBraces: Custom, \
   BraceWrapping: { \
-    AfterClass: false, \
-    AfterControlStatement: false, \
-    AfterEnum: false, \
+    AfterClass: true, \
+    AfterControlStatement: true, \
+    AfterEnum: true, \
     AfterFunction: true, \
-    AfterNamespace: false, \
-    AfterObjCDeclaration: false, \
-    AfterStruct: false, \
-    AfterUnion: false, \
+    AfterNamespace: true, \
+    AfterObjCDeclaration: true, \
+    AfterStruct: true, \
+    AfterUnion: true, \
     BeforeCatch: true, \
     BeforeElse: true, \
     IndentBraces: false \
@@ -50,10 +50,11 @@ clang-format -i -style="{ \
   BreakBeforeBinaryOperators: None, \
   BreakBeforeTernaryOperators: true, \
   BreakConstructorInitializersBeforeComma: false, \
-  ColumnLimit: 100, \
-  ConstructorInitializerAllOnOneLineOrOnePerLine: true, \
-  ConstructorInitializerIndentWidth: 2, \
-  ContinuationIndentWidth: 0, \
+  ColumnLimit: 80, \
+  CommentPragmas: '^ IWYU pragma:', \
+  ConstructorInitializerAllOnOneLineOrOnePerLine: false, \
+  ConstructorInitializerIndentWidth: 4, \
+  ContinuationIndentWidth: 4, \
   Cpp11BracedListStyle: false, \
   DerivePointerAlignment: false, \
   DisableFormat: false, \
@@ -62,13 +63,13 @@ clang-format -i -style="{ \
   IndentCaseLabels: true, \
   IndentWidth: 4, \
   IndentWrappedFunctionNames: false, \
-  KeepEmptyLinesAtTheStartOfBlocks: false, \
+  KeepEmptyLinesAtTheStartOfBlocks: true, \
   MaxEmptyLinesToKeep: 2, \
   NamespaceIndentation: None, \
   ObjCBlockIndentWidth: 4, \
-  ObjCSpaceAfterProperty: false, \
-  ObjCSpaceBeforeProtocolList: false, \
-  PenaltyBreakBeforeFirstCallParameter: 1, \
+  ObjCSpaceAfterProperty: true, \
+  ObjCSpaceBeforeProtocolList: true, \
+  PenaltyBreakBeforeFirstCallParameter: 19, \
   PenaltyBreakComment: 300, \
   PenaltyBreakFirstLessLess: 120, \
   PenaltyBreakString: 1000, \
@@ -88,7 +89,7 @@ clang-format -i -style="{ \
   SpacesInParentheses: false, \
   SpacesInSquareBrackets: false, \
   Standard: Cpp11, \
-  TabWidth: 4, \
+  TabWidth: 8, \
   UseTab: Never \
 }" "${1}"
 
