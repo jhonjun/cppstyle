@@ -19,7 +19,7 @@ Do you want the style of your code to be consistent?
 Look no further! Simply run cleanup.sh on the root of your project and it will clean it up for you.
 
 ## Goals
-* Readbility
+* Readability
 * Consistency
 * Avoid pitfalls that may lead to bugs
 
