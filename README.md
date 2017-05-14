@@ -4,12 +4,12 @@ Automatically fix C++ code to comply to a standard style.
 
 ## Usage
 ```
-cleanup.sh [dir] [-e list of files or dirs to exclude]
+cppstyle [dir] [-e list of files or dirs to exclude]
 ```
 
 ## Requirement
-* clang-format (tested with 3.8)
-* Both cleanup.sh and cleansrc.sh must be installed in a directory within $PATH.
+* clang-format (at least 3.8)
+* cppstyle, cleanup.sh and cleansrc.sh must be installed in a directory within $PATH.
 
 ## Rationale
 Is messy code giving you a headache?
