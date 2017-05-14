@@ -11,5 +11,5 @@
 # @usage     cppstyle [dir] [-e list of files or dirs to exclude]
 #
 
-cleanup.sh ${*}
+cleanup.sh "${@}"
 
