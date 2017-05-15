@@ -29,8 +29,8 @@ clang-format -i -style="{ \
   AlwaysBreakAfterReturnType: None, \
   AlwaysBreakBeforeMultilineStrings: false, \
   AlwaysBreakTemplateDeclarations: true, \
-  BinPackArguments: true, \
-  BinPackParameters: true, \
+  BinPackArguments: false, \
+  BinPackParameters: false, \
   BreakBeforeBraces: Custom, \
   BraceWrapping: { \
     AfterClass: true, \
